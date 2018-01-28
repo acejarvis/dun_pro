@@ -1,0 +1,1143 @@
+{
+  "id": "aae3cec1-1c4d-4192-9666-1818537e3846",
+  "name": "Request_Money_from_someone",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "checkContact",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1cb91671-9c96-4447-b87f-d22bf44093a5",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "prompts": [
+            "Whom do you hope to request money from?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "0a8a45b1-c46a-448d-8424-66f91ca8c456",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            "How much money do you need to request?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1516465668,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d9167778-fec8-4314-a9c8-6ce21dc53d5c",
+      "data": [
+        {
+          "text": "Would you please ask "
+        },
+        {
+          "text": "Mark",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " to pay "
+        },
+        {
+          "text": "5 hundred million",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars to me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3086befe-f216-46c5-a380-add97cf3ab33",
+      "data": [
+        {
+          "text": "Tell "
+        },
+        {
+          "text": "Austin",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to give the "
+        },
+        {
+          "text": "12 hundred",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " Canadian dollars back recently."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b2e8c26c-2cac-43d6-a1a9-e0056514c159",
+      "data": [
+        {
+          "text": "Why "
+        },
+        {
+          "text": "Donald",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " still do not return the "
+        },
+        {
+          "text": "2 hundred trillion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " to me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0029c697-5fb4-4d73-80d2-f9cd00f2cf65",
+      "data": [
+        {
+          "text": "I need some money now"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bf6cf10b-c0f1-45a1-b21e-8f122ec07266",
+      "data": [
+        {
+          "text": "I would like you to help me inform "
+        },
+        {
+          "text": "Stephen",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to  return my money back"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "edcfe798-0f7d-4db2-b38d-1065bbd5b5c5",
+      "data": [
+        {
+          "text": "It is time for "
+        },
+        {
+          "text": "Donna",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " to pay the "
+        },
+        {
+          "text": "9 hundred billion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars back now!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6c9417f9-45d4-4995-98ed-6900cb707a71",
+      "data": [
+        {
+          "text": "Please help me ask "
+        },
+        {
+          "text": "Tyler",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to pay me "
+        },
+        {
+          "text": "7 hundred million",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " tomorrow?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8ca97901-beee-4d15-add5-56c390b6ba13",
+      "data": [
+        {
+          "text": "Could you please ask "
+        },
+        {
+          "text": "Robin",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " to send "
+        },
+        {
+          "text": "3 hundred thousand",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars to me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "77809406-6d4e-404a-8f19-37ddf353e891",
+      "data": [
+        {
+          "text": "With the "
+        },
+        {
+          "text": "8 hundred",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars back from "
+        },
+        {
+          "text": "Nancy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": ", we can have a good day!!!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8149a2f5-59b0-42f7-bc9a-1a3cdc1a8db1",
+      "data": [
+        {
+          "text": "I dare say that Pearson cannot remember the "
+        },
+        {
+          "text": "10 thousand",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars borrowed from us."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "65c078d6-46d2-4fcb-96b7-1a79be2b22a1",
+      "data": [
+        {
+          "text": "It is obvious that "
+        },
+        {
+          "text": "Thea",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " has no memory of the "
+        },
+        {
+          "text": "23 hundred",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " we borrowed to her!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1145db5e-b894-4508-a174-9d449b334d9c",
+      "data": [
+        {
+          "text": "Maybe I ought to remind "
+        },
+        {
+          "text": "Sandy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " of the "
+        },
+        {
+          "text": "9 thousand",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " he lent from "
+        },
+        {
+          "text": "us",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "64483651-73f8-4b3a-97a4-f2eb385fcb3b",
+      "data": [
+        {
+          "text": "I guess "
+        },
+        {
+          "text": "Oliver",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " has forgot the "
+        },
+        {
+          "text": "303 trillion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " we lent to him."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1d9c8137-3fb4-44c3-82a7-1b37952ec7d3",
+      "data": [
+        {
+          "text": "We should find our "
+        },
+        {
+          "text": "25 million",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars back"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "89e6f745-859e-4177-97bf-1330b8889296",
+      "data": [
+        {
+          "text": "request "
+        },
+        {
+          "text": "1 billion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " from "
+        },
+        {
+          "text": "Jack",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9e089adf-5cbe-4d89-b831-7fad5f299435",
+      "data": [
+        {
+          "text": "It is high time that "
+        },
+        {
+          "text": "Phillip",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " should follow his promise to return my "
+        },
+        {
+          "text": "493 trillion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "86508311-122c-4a50-9032-7588c14d3948",
+      "data": [
+        {
+          "text": "Connect "
+        },
+        {
+          "text": "Greg",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to alert him to give my "
+        },
+        {
+          "text": "2 million",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars back as soon as possible!!!!!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7a8aef6a-b06a-44d5-afb0-545c57f468cb",
+      "data": [
+        {
+          "text": "Make sure to inform "
+        },
+        {
+          "text": "Peter",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " to send "
+        },
+        {
+          "text": "600 billion",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars to me at once"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f5ae7c08-d8bd-4ce5-a62c-6399f18c0270",
+      "data": [
+        {
+          "text": "Ask somebody for money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "24eafe93-63fc-4776-90cf-0514300317f7",
+      "data": [
+        {
+          "text": "Ask someone for money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "dd503f0b-dd98-4da7-8703-5d5069c62c25",
+      "data": [
+        {
+          "text": "Karen",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " should give "
+        },
+        {
+          "text": "1",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollar to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0972eea8-4de4-4c99-a818-e2b7d4f8e967",
+      "data": [
+        {
+          "text": "Ask "
+        },
+        {
+          "text": "Tyler",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "18",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "369346e7-6a50-422f-ad46-fb66b05a4ff5",
+      "data": [
+        {
+          "text": "Let "
+        },
+        {
+          "text": "Jay",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " return me "
+        },
+        {
+          "text": "4112123",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9015bf66-770f-466c-a57f-0c4400f7900a",
+      "data": [
+        {
+          "text": "Could you please tell "
+        },
+        {
+          "text": "Jay",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to return my "
+        },
+        {
+          "text": "1",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollar?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f5cf84c2-d45f-4f73-89c1-7ab7837f1d87",
+      "data": [
+        {
+          "text": "I must get "
+        },
+        {
+          "text": "1",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollar from "
+        },
+        {
+          "text": "John",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "135ea40b-2d93-4202-880f-495e095ca943",
+      "data": [
+        {
+          "text": "It is time "
+        },
+        {
+          "text": "Simon",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " give my "
+        },
+        {
+          "text": "200",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " bucks back"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "79467e27-3d77-4e28-9c73-a8cfaaace0ce",
+      "data": [
+        {
+          "text": "Kathy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " borrowed "
+        },
+        {
+          "text": "4000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " from me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "98e42eb6-754b-4b03-97da-59f551638ad1",
+      "data": [
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " borrowed "
+        },
+        {
+          "text": "200",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " from me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "245e05a5-3554-4abd-ba51-732cc2e4897e",
+      "data": [
+        {
+          "text": "Where is my money??when will "
+        },
+        {
+          "text": "Jason",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " give it back to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "826f65ee-940c-4c7f-b995-e6faa4ae5bfe",
+      "data": [
+        {
+          "text": "Anybody tell me when will that bloody hell "
+        },
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " give my "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " bucks back!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "13c06ef7-5744-49e0-b92b-bd9b279630ec",
+      "data": [
+        {
+          "text": "the amount of money "
+        },
+        {
+          "text": "Danial",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " owed to me is totally "
+        },
+        {
+          "text": "30",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " dollars"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "3fab321a-929b-459b-9756-4195f12a09fb",
+      "data": [
+        {
+          "text": "When will "
+        },
+        {
+          "text": "Jenny",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " give back the "
+        },
+        {
+          "text": "40",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d3250075-c8b5-4188-98f1-36151e408187",
+      "data": [
+        {
+          "text": "I should have had my "
+        },
+        {
+          "text": "200",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " dollars  back from "
+        },
+        {
+          "text": "James",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6d62084f-6b96-4bcc-a9fe-d08fece7b815",
+      "data": [
+        {
+          "text": "Tommy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " owes me "
+        },
+        {
+          "text": "2000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "48282786-12f7-48bd-98ec-f61627dfb053",
+      "data": [
+        {
+          "text": "I hope "
+        },
+        {
+          "text": "Tommy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " can give back my "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " dollars as soon as possible"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3f74c779-23bf-4e44-bd5a-e9faa0ac851a",
+      "data": [
+        {
+          "text": "I want my "
+        },
+        {
+          "text": "40",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " CAD back from "
+        },
+        {
+          "text": "Lily",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "0ff87fae-dc82-4eae-8d7a-cd665d7468df",
+      "data": [
+        {
+          "text": "Tell "
+        },
+        {
+          "text": "Tommy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to give back "
+        },
+        {
+          "text": "40",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " CAD"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f2dcc428-1586-4f0a-98e7-a8419c093dd7",
+      "data": [
+        {
+          "text": "I think it is time that "
+        },
+        {
+          "text": "Helen",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " send me "
+        },
+        {
+          "text": "567",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " back"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4be80eac-deaa-47fe-a563-1ccf9bb5abaf",
+      "data": [
+        {
+          "text": "Tell "
+        },
+        {
+          "text": "John",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to give "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars "
+        },
+        {
+          "text": "back",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " to me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "701c3afe-a57b-4908-9222-31dd5aaa0c4f",
+      "data": [
+        {
+          "text": "Request "
+        },
+        {
+          "text": "70",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " dollars"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "24df3e73-402d-476f-992e-f11d6ee138f1",
+      "data": [
+        {
+          "text": "Ask "
+        },
+        {
+          "text": "Peter",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " to return me "
+        },
+        {
+          "text": "5000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "60e59539-7db0-4fa8-b0c1-e709b855cb6f",
+      "data": [
+        {
+          "text": "Request money from "
+        },
+        {
+          "text": "Bill",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

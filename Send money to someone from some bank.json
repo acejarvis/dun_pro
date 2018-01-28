@@ -1,0 +1,1387 @@
+{
+  "id": "54d3b11b-886d-44fd-ba11-0f1e875fd52b",
+  "name": "Send money to someone from some bank",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Sendmoneytosomeonefromsomebank-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ce8dc048-64a7-4cde-ae78-1749f28e52ee",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "prompts": [
+            "To whom do you hope to transfer money?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "cff5d8a3-c88f-4618-89a6-5c0413fe9532",
+          "required": false,
+          "dataType": "@Bank_Account_Type",
+          "name": "Bank_Account_Type",
+          "value": "$Bank_Account_Type",
+          "prompts": [],
+          "defaultValue": "chequing",
+          "isList": false
+        },
+        {
+          "id": "9ca8e94a-6c62-4b86-9f9e-086d1f92d477",
+          "required": false,
+          "dataType": "@sys.currency-name",
+          "name": "currency-name",
+          "value": "$currency-name",
+          "prompts": [],
+          "defaultValue": "Canadian dollars",
+          "isList": false
+        },
+        {
+          "id": "5fbd25fd-8ca8-4d05-b044-16f1ed3ed045",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            "How much money would you like to send?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "2f3be3a7-4942-4d2c-b180-b8156641bd11",
+          "required": false,
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$number $currency-name is on its way to $given-name from you $Bank_Account_Type account"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1516430013,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f2526e47-fe0b-4341-a039-a2edc0d065b6",
+      "data": [
+        {
+          "text": "give "
+        },
+        {
+          "text": "Misa",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ead8dd36-00a6-4622-b9f1-39f746a7dbf2",
+      "data": [
+        {
+          "text": "send "
+        },
+        {
+          "text": "2000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Sophia",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ea3de271-0ae7-424e-a064-954e12732947",
+      "data": [
+        {
+          "text": "I borrowed "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Chinese yuan",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from "
+        },
+        {
+          "text": "Obama",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "52058a0a-5b57-4207-baae-a1d448a83674",
+      "data": [
+        {
+          "text": "I borrowed money from "
+        },
+        {
+          "text": "Obama",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "last week",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d3e6e6d5-16ce-42f7-828f-977581216a7d",
+      "data": [
+        {
+          "text": "Obama",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " lent me "
+        },
+        {
+          "text": "10000000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a4897630-4355-4f3d-994a-4d7ba6fcb7a2",
+      "data": [
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " lent me "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5548bef3-4df4-4b80-b988-e6e744aa04a7",
+      "data": [
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " lent me money "
+        },
+        {
+          "text": "last week",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c71da044-d7e9-4d7a-81ed-7fb3cfe44dfc",
+      "data": [
+        {
+          "text": "I think I borrowed money from "
+        },
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "781cf116-4ab1-40c6-ba47-116e61b1e908",
+      "data": [
+        {
+          "text": "I think I owed "
+        },
+        {
+          "text": "Jerry",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "30",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "yen",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " ,can you help me return that?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "18e9e4e9-8a8d-4ee1-87e7-1fc07e99759a",
+      "data": [
+        {
+          "text": "I need to pay back the "
+        },
+        {
+          "text": "300",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " borrowed from "
+        },
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3b975b47-90a3-48ea-82a9-33a80f32a74c",
+      "data": [
+        {
+          "text": "I still owe "
+        },
+        {
+          "text": "Alice",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "20",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c8528a9b-be94-4d6c-a9df-7ca5b1d5fcf2",
+      "data": [
+        {
+          "text": "I would like to give money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "60d4bdcf-31a9-44da-b0f2-00c8dddbeb4f",
+      "data": [
+        {
+          "text": "Could you please send money for me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "abc824ab-ef3a-4052-ac57-a13d401ff2ed",
+      "data": [
+        {
+          "text": "I want to e-transfer"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b5b30d00-3227-41c5-987e-142bea41cb26",
+      "data": [
+        {
+          "text": "Help me pay"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "524c1ee7-b35a-49d1-a4e0-bfeb784096d7",
+      "data": [
+        {
+          "text": "e-transfer money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e018d593-bac0-429c-b70c-7b14daf95817",
+      "data": [
+        {
+          "text": "Give money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e55f772e-12f2-4fba-b3d8-34914c47bddb",
+      "data": [
+        {
+          "text": "Pay money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "341000ce-c4b8-4e3c-b992-9f4293c4cbe4",
+      "data": [
+        {
+          "text": "Transfer money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d2b0bd90-0b4f-4bc4-8ec1-827eaca8372b",
+      "data": [
+        {
+          "text": "Send money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ba9d3f62-05f0-45e3-a07e-7cda6f3e454f",
+      "data": [
+        {
+          "text": "Now, pay "
+        },
+        {
+          "text": "Sandy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "23",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Hong Kong dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "RBC",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "chequing",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a1db8194-830a-4f3c-b2fe-c0ad7f99cee9",
+      "data": [
+        {
+          "text": "I hope to give "
+        },
+        {
+          "text": "Davis",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2997",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " New "
+        },
+        {
+          "text": "Taiwan dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "saving",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4fe9cd3b-c537-44a9-885f-5e1ca9388d6e",
+      "data": [
+        {
+          "text": "Can you pay from my "
+        },
+        {
+          "text": "Scotiabank",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "deposit",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Williams",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "10",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollar",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9c1ba63b-d772-4d84-85be-67d44161973f",
+      "data": [
+        {
+          "text": "Give "
+        },
+        {
+          "text": "Kate",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "9000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Franc",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "RBC",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "saving",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        },
+        {
+          "text": ", now!!!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1fb0de9e-8758-40ac-84c3-d5858e2078fe",
+      "data": [
+        {
+          "text": "Pay "
+        },
+        {
+          "text": "30",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yen",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Harry",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " from the "
+        },
+        {
+          "text": "tax-free account",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        },
+        {
+          "text": ", at once!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c1e2f9e4-f2dd-4530-81db-3a48e172391f",
+      "data": [
+        {
+          "text": "Can you do me a favor by paying "
+        },
+        {
+          "text": "Roger",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "40",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yen",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "GIC account",
+          "alias": "Bank_Account_Type",
+          "meta": "@Bank_Account_Type",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c9a7ff7d-8708-430f-8f40-47c7268a81c5",
+      "data": [
+        {
+          "text": "Transfer "
+        },
+        {
+          "text": "888",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Chinese Yuan",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from "
+        },
+        {
+          "text": "BMO",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Charles",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9fccdeee-995e-4332-92ec-354e8bff326c",
+      "data": [
+        {
+          "text": "To "
+        },
+        {
+          "text": "Steve",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": ", send "
+        },
+        {
+          "text": "22",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Euro",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from the "
+        },
+        {
+          "text": "TD Canada Trust",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "130c36a1-b77e-45bf-8164-63cbb189268e",
+      "data": [
+        {
+          "text": "Send "
+        },
+        {
+          "text": "30",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "US dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "RBC",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " account to "
+        },
+        {
+          "text": "Sophia",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "473e27d1-1e07-4294-8150-bc781d4a47ff",
+      "data": [
+        {
+          "text": "Transfer "
+        },
+        {
+          "text": "30",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Canadian dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Jeff",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " from my "
+        },
+        {
+          "text": "CIBC",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " account"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0a8ede01-5dc6-46c3-9073-6156634b439b",
+      "data": [
+        {
+          "text": "Help me send "
+        },
+        {
+          "text": "543",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Singapore dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        },
+        {
+          "text": " to Miss "
+        },
+        {
+          "text": "Hominnie",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "9b17ca25-c425-451f-a5e0-2611cc1468c0",
+      "data": [
+        {
+          "text": "send "
+        },
+        {
+          "text": "10",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "CAD",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Bob",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "12a836ea-3822-490d-b82a-aafbd4ae76d9",
+      "data": [
+        {
+          "text": "I need to transfer Mr. Trump"
+        },
+        {
+          "text": " 1",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "US dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "b047b217-2919-4596-bc98-06cf2f703386",
+      "data": [
+        {
+          "text": "Give Mr. "
+        },
+        {
+          "text": "Sanada",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "50",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yen",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "bd2f59fd-0a65-4111-9acb-b05f23154ddb",
+      "data": [
+        {
+          "text": "To Mrs. "
+        },
+        {
+          "text": "Elisabeth",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": ", send "
+        },
+        {
+          "text": "69",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Euro",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "71b742a6-9435-43b7-a033-c42e4c4f7805",
+      "data": [
+        {
+          "text": "Would you please pay "
+        },
+        {
+          "text": "763",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Euro",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "James",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " for me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "6497b714-7b49-4cbc-a357-53dde4805ae5",
+      "data": [
+        {
+          "text": "Can you transfer "
+        },
+        {
+          "text": "Hobo",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dinar",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": ", please"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "797bdf35-25a5-43f7-ada9-dd9a7e3c392e",
+      "data": [
+        {
+          "text": "Send "
+        },
+        {
+          "text": "4939",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yen",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Jack",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " for me"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "9dac9cab-e1be-4282-a677-362fb8fb2388",
+      "data": [
+        {
+          "text": "Pay "
+        },
+        {
+          "text": "324",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Rupee",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Chris",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "6b5648b1-cef9-4c92-a8e9-67ecccf90c46",
+      "data": [
+        {
+          "text": "Transfer "
+        },
+        {
+          "text": "42",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Canadian dollars",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Jerry",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    },
+    {
+      "id": "3d8e0b80-3626-4403-b82c-67346374d675",
+      "data": [
+        {
+          "text": "Send "
+        },
+        {
+          "text": "David",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "100",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Chinese Yuan",
+          "alias": "currency-name",
+          "meta": "@sys.currency-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516430013,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

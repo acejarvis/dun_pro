@@ -1,0 +1,1096 @@
+{
+  "id": "d3d83797-3673-41a7-b5d8-fd36a5747bc7",
+  "name": "Add_Contact",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "addcontact",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "308b8999-15aa-4b8e-b943-c8e5b75acc7d",
+          "required": false,
+          "dataType": "@sys.given-name",
+          "name": "given-name",
+          "value": "$given-name",
+          "prompts": [
+            "Whose contact info is this?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "e6197ae2-47b1-40b7-86f0-4cd1239a84c5",
+          "required": false,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "isList": false
+        },
+        {
+          "id": "cf237950-ab6c-4413-8d2b-7261277452ee",
+          "required": false,
+          "dataType": "@sys.phone-number",
+          "name": "phone-number",
+          "value": "$phone-number",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "the new contact $given-name with the email $email is set for you",
+            "the new contact $given-name with the email $phone-number is set for you"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "lastUpdate": 1516446408,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "1a4cd3ca-13eb-43da-9786-713f6bc7e5e5",
+      "data": [
+        {
+          "text": "please plus "
+        },
+        {
+          "text": "zhaobo.ding@idt.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": " into contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3c563ff2-8c61-4382-ae51-7e60b912adf8",
+      "data": [
+        {
+          "text": "Take "
+        },
+        {
+          "text": "Walt",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " into my contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "023909cb-84ae-45c4-a003-3f55a90d257f",
+      "data": [
+        {
+          "text": "Dick",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " and his number "
+        },
+        {
+          "text": "3283281477",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        },
+        {
+          "text": " is supposed to be in my contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "852458f0-89cc-4ab7-95df-780cd2d5b26d",
+      "data": [
+        {
+          "text": "Eric",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " and his email which is "
+        },
+        {
+          "text": "ailike@eric.cn",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": " ought to be added into my contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bacecaf8-88bb-4613-9518-1b7da4530b3a",
+      "data": [
+        {
+          "text": "My last roommate was "
+        },
+        {
+          "text": "Kitty",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " who has a number of "
+        },
+        {
+          "text": "7302974006",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": " should be added into my contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "431f3d6c-116e-4051-8dec-2e37d86ea433",
+      "data": [
+        {
+          "text": "My "
+        },
+        {
+          "text": "English",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " teacher "
+        },
+        {
+          "text": "Raymond",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": ", has no email account, but a phone number of "
+        },
+        {
+          "text": "1234567890",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ac3dfaa3-625b-4ce6-b47a-65bc3ae1c673",
+      "data": [
+        {
+          "text": "My girlfriend, "
+        },
+        {
+          "text": "Liz",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s number is "
+        },
+        {
+          "text": "5198934092",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6d6c0b49-fbe2-4e72-8ca5-79a8b8299239",
+      "data": [
+        {
+          "text": "I have a new friend "
+        },
+        {
+          "text": "Austin",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", whose email is "
+        },
+        {
+          "text": "austin2001@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c41f35db-6f7b-40cc-b4cf-701a447cdf92",
+      "data": [
+        {
+          "text": "Her phone number is "
+        },
+        {
+          "text": "4539057493",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ffc503df-0ec8-4f2a-896c-d37069a2ab9d",
+      "data": [
+        {
+          "text": "9808907781",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f4d55ef6-b5ac-4a3a-b869-02fed8da2ed5",
+      "data": [
+        {
+          "text": "2342434331",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f9b1e4d7-5fb7-4b89-a4fb-b10bc092096b",
+      "data": [
+        {
+          "text": "2345467789",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "42d0387e-a7b7-47d8-919e-4294b48cf101",
+      "data": [
+        {
+          "text": "3247789021",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0da4ef28-cf52-47ba-929c-5a36f6ed2b2d",
+      "data": [
+        {
+          "text": "6478183389",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "649ec620-85f1-4a38-ab61-dcef4a5e51b2",
+      "data": [
+        {
+          "text": "Dickens",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' phone number does not exist, but he has a email that is "
+        },
+        {
+          "text": "409sklfkj@ijt.cv",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "898730ab-ebb7-4631-aa90-0c7b49e20d53",
+      "data": [
+        {
+          "text": "Jones",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email does not exist"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f2821b09-c92e-49fb-b6b8-2c2346d57fd9",
+      "data": [
+        {
+          "text": "Jesus",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email  is "
+        },
+        {
+          "text": "godhellsendyouhome@uwaterloo.ca",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "18f481fc-c767-4e91-b012-5b2f90b4b2ac",
+      "data": [
+        {
+          "text": "Davis",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email is "
+        },
+        {
+          "text": "enasba3123@outlook.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "54e998c0-6b71-430d-8150-81adb18d3b38",
+      "data": [
+        {
+          "text": "Chris",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email is "
+        },
+        {
+          "text": "karen958294@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4bfd2694-9a0d-4b80-9842-b9136ac79383",
+      "data": [
+        {
+          "text": "James",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email is "
+        },
+        {
+          "text": "james67671@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c3dd46f2-f9a6-44c2-a3b8-fb22f9ba5e62",
+      "data": [
+        {
+          "text": "Tony",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s email address is "
+        },
+        {
+          "text": "karen698698@uwo.ca",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "16c2b374-e5a5-4f1f-b180-3dec8543faa3",
+      "data": [
+        {
+          "text": "Remember "
+        },
+        {
+          "text": "Angela",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s email has been changed into "
+        },
+        {
+          "text": "iamangela@toronto.net",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2c1cd5d4-fe93-4ae1-bd52-d514009816ce",
+      "data": [
+        {
+          "text": "Renew "
+        },
+        {
+          "text": "Edward",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s email should be "
+        },
+        {
+          "text": "edward@foxmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9f54d3dc-29df-44c8-89ed-e41944beaa90",
+      "data": [
+        {
+          "text": "update "
+        },
+        {
+          "text": "Wright",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s phone number to "
+        },
+        {
+          "text": "67320649907",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "47954f9f-1dc5-46b2-b213-f12cd3284834",
+      "data": [
+        {
+          "text": "I recently found that "
+        },
+        {
+          "text": "Catherine",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s email is "
+        },
+        {
+          "text": "cath@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6d143663-a80a-4148-9468-c8340a42b6b2",
+      "data": [
+        {
+          "text": "Helen",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s has no email but she has a phone with a number "
+        },
+        {
+          "text": "7492107706",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "aed49c60-9159-4d35-a5d4-7ac64d16f982",
+      "data": [
+        {
+          "text": "Jay",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s phone number is "
+        },
+        {
+          "text": "3479025822",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "aa6d248c-d73d-48ae-85f4-ebb14ffa635f",
+      "data": [
+        {
+          "text": "Bill",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " has a cell phone with number "
+        },
+        {
+          "text": "5195195199",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "035f5b12-7713-434d-9566-fad1a5d6b4cd",
+      "data": [
+        {
+          "text": "Tommy",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "'s email is "
+        },
+        {
+          "text": "141423153@qq.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "91c80156-9c9c-4b2e-ab90-152f2e955b35",
+      "data": [
+        {
+          "text": "the phone number is "
+        },
+        {
+          "text": "0985913191",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": " while the email is "
+        },
+        {
+          "text": "me@myself.net",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f2adfb29-4738-459e-9cb3-142c087ca695",
+      "data": [
+        {
+          "text": "The email address is "
+        },
+        {
+          "text": "something@uwaterloo.ca",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0d32371b-ed5a-4c00-99b8-b73e6b2f7ff7",
+      "data": [
+        {
+          "text": "her phone number "
+        },
+        {
+          "text": "437164101",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b0841a85-8fb7-4893-ae9f-66772425cc8b",
+      "data": [
+        {
+          "text": "his phone number is "
+        },
+        {
+          "text": "6478182234",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "72c12dac-1e74-4919-92aa-d280d290be6f",
+      "data": [
+        {
+          "text": "the new contact is named "
+        },
+        {
+          "text": "Thomas",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " and his number is "
+        },
+        {
+          "text": "6632171819",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "36f3ddda-60a0-4d55-a9c1-b760f9a6a21f",
+      "data": [
+        {
+          "text": "Nicholas",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' email is "
+        },
+        {
+          "text": "sanaj21e2@casf.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ad005d27-3b1f-4956-9c9d-bf54ca486e8f",
+      "data": [
+        {
+          "text": "my friend "
+        },
+        {
+          "text": "Tom",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " has the number "
+        },
+        {
+          "text": "6758182364",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d9a3252c-7353-46b2-9ab9-1b621788610f",
+      "data": [
+        {
+          "text": "Jones",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": "' number is "
+        },
+        {
+          "text": "5486162349",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "57a5ae67-b1e4-4ca4-8e5a-a05a3d26384b",
+      "data": [
+        {
+          "text": "I have a new friend named "
+        },
+        {
+          "text": "James",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " , his email address is "
+        },
+        {
+          "text": "james@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": " and phone number "
+        },
+        {
+          "text": "6478183955",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "f0f53c9a-9919-4599-a974-0ad528909fe1",
+      "data": [
+        {
+          "text": "add "
+        },
+        {
+          "text": "Griffin",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " with email "
+        },
+        {
+          "text": "griffin@yahoo.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "81dc2af2-e50d-4596-b530-b51cc00ceb0b",
+      "data": [
+        {
+          "text": "new friend named "
+        },
+        {
+          "text": "Dale",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "7d732447-2cb7-4450-abd5-0ff84aca1ede",
+      "data": [
+        {
+          "text": "add "
+        },
+        {
+          "text": "Ella",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " as new contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "5c11b59a-df6f-4b4c-b1c1-3438ecc60e72",
+      "data": [
+        {
+          "text": "new contact "
+        },
+        {
+          "text": "Barbosa",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "2673501a-afbb-4d23-b03f-6112993652c4",
+      "data": [
+        {
+          "text": "New friend "
+        },
+        {
+          "text": "Sophia",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "f29adb2a-b3c6-40df-9b5b-e8997011c99d",
+      "data": [
+        {
+          "text": "Alex",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " to my contact"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "86c046b4-905b-44db-8cfa-c85680a5f264",
+      "data": [
+        {
+          "text": "plus "
+        },
+        {
+          "text": "Rita",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "8f328f25-8d72-4a28-9d8b-8e60facd3352",
+      "data": [
+        {
+          "text": "create "
+        },
+        {
+          "text": "Alice",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    },
+    {
+      "id": "f903ef11-3815-4ba0-855f-4afa2116c87b",
+      "data": [
+        {
+          "text": "add "
+        },
+        {
+          "text": "Bob",
+          "alias": "given-name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1516446408,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
